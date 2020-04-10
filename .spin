@@ -1,0 +1,7 @@
+(Source bs-react)
+(Cfg_str project_name dark)
+(Cfg_str project_slug dark)
+(Cfg_str project_description"Testing dark")
+(Cfg_str author_name"Thomas Deconinck")
+(Cfg_str css_framework TailwindCSS)
+(Cfg_str ci_cd Github)
