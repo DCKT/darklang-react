@@ -11,7 +11,7 @@ module TenorApi = {
       Js.Promise.(
         Fetch.fetch(baseUrl ++ "/search?q=" ++ search)
         |> then_(Fetch.Response.json)
-        |> then_(data => data->Obj.magic##results)
+        |> then_(data => data->Obj.magic)
       );
   };
 };

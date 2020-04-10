@@ -1,12 +1,12 @@
 {
-  "name": "dark",
+  "name": "darklang-react",
   "version": "0.1.0",
   "description": "Testing dark",
   "author": "Thomas Deconinck",
   "license": "MIT",
-  "homepage": "https://github.com//dark",
+  "homepage": "https://github.com/DCKT/darklang-react",
   "bugs": {
-    "url": "https://github.com//dark/issues"
+    "url": "https://github.com/DCKT/darklang-react/issues"
   },
   "repository": {
     "type": "git",
@@ -58,7 +58,7 @@
     "start:bsb": "bsb -make-world -w",
     "start:webpack": "webpack-dev-server --config config/webpack.config.js --open",
     "clean": "bsb -clean-world",
-    "test": "bsb -make-world && jest",
+    "test": "bsb -make-world",
     "format": "bsrefmt --in-place */**/*.re */*.re"
   }
 }
