@@ -1,6 +1,6 @@
 # dark
 
-[![Actions Status](https://github.com//dark/workflows/CI/badge.svg)](https://github.com//dark/actions)
+[![Actions Status](https://github.com/DCKT/darklang-react/workflows/CI/badge.svg)](https://github.com/DCKT/darklang-react/actions)
 
 Testing dark
 
