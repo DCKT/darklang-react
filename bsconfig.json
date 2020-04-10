@@ -7,11 +7,6 @@
     {
       "dir": "src",
       "subdirs": true
-    },
-    {
-      "dir": "tests",
-      "subdirs": true,
-      "type": "dev"
     }
   ],
   "package-specs": [
@@ -23,11 +18,6 @@
   "suffix": ".bs.js",
   "namespace": true,
   "bs-dependencies": ["reason-react", "bs-fetch"],
-  "bs-dev-dependencies": [
-    "@glennsl/bs-jest",
-    "bs-react-testing-library",
-    "bs-webapi"
-  ],
   "ppx-flags": [],
   "refmt": 3,
   "warnings": {

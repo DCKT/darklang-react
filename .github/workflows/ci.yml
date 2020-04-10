@@ -28,18 +28,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Check formatting
-        run: |
-          yarn format
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "There are differences:"
-            git status --porcelain
-            echo "----"
-            echo ""
-            echo 'Please run `yarn format` locally to fix the issues.'
-            exit 1
-          fi
-
       - name: Run tests
         run: yarn test
 
@@ -71,15 +59,6 @@ jobs:
       - name: Build production assets
         run: yarn build
 
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1.0.0
-        with:
-          fetch-depth: 1
-      # Build, transpile etc.
       - name: Upload static assets to Dark canvas
         uses: gregbrimble/dark-static-assets-action@v1.0.0
         with:

@@ -26,9 +26,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
-    "@glennsl/bs-jest": "^0.4.9",
     "bs-platform": "^7.0.1",
-    "bs-react-testing-library": "^0.6.0",
     "bs-webapi": "^0.15.6",
     "concurrently": "^5.0.2",
     "css-loader": "^3.4.2",
@@ -43,14 +41,6 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
-  },
-  "jest": {
-    "roots": [
-      "<rootDir>/tests"
-    ],
-    "testMatch": [
-      "<rootDir>/tests/**/*_test.{js,bs.js}"
-    ]
   },
   "scripts": {
     "build": "bsb -make-world && NODE_ENV=production webpack --config config/webpack.config.js && cp -n public/* build/ | true",
